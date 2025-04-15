@@ -28,7 +28,7 @@ function Comoajudar() {
               {/*Consulte também nossos sistemas de inscrição para eventos e sistemas de emissão de certificados.<br />
                 */}<br />
               Faça um orçamento sem compromisso:  
-              <a className="text-lime-900 underline" href="https://undraw.co/"
+              <a className="text-lime-900 underline" href="https://wa.me/11989809727?text=Quero%20conhecer%20mais%20sobre%20seus%20trabalhos%20de%20site%20e%20sistemas"
                 > WhatsApp </a>
             </p>
           </div>
