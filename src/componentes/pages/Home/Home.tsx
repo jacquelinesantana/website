@@ -26,12 +26,12 @@ function Home() {
         ></div>
       </div>
 
-      <h3 className="my-4 text-3xl font-extrabold">
+      <h3 className="my-4 text-3xl font-extrabold text-green-900">
         Chama no WhatsApp!
       </h3>
 
       <button
-        className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg"
+        className="mx-auto lg:mx-0 hover:underline bg-white text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
       >
         Chamar!
       </button>
