@@ -1,27 +1,26 @@
 /*
-<section className="bg-gray-100 border-b py-8">
-      <div className="container max-w-5xl mx-auto m-8">
+<div className="flex flex-wrap">
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Web Site
+            </h3>
+            <p className="text-gray-600 mb-8">
 */
 function Quemsomos() {
   return (
     <>
       <section className="bg-white border-b py-8 ">
       <div
-        className="ontainer max-w-5xl mx-auto m-8"
+        className="ontainer max-w-5xl  m-8"
       >
         <h2
           className="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8"
         >
           Quem Somos
         </h2>
-        <div className="w-full mb-4 max-w-5xl m-8">
-          <div
-            className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-          ></div>
-        </div>
-
+        
         <div
-          className="flex flex-1 flex-wrap max-w-4xl mx-auto items-center justify-between text-xl text-gray-500 font-bold opacity-75"
+          className="flex flex-1 flex-wrap max-w-4xl mx-auto items-center justify-between text-xl text-gray-500 font-bold opacity-75 m-18"
         >
           <p>Transforme sua paixão em resultados online!</p>
           <p>Desde 2017, nossa missão tem sido impulsionar negócios como o seu no universo digital. Sabemos o quanto você se dedica à sua empresa — e é exatamente essa paixão que queremos levar para o seu site.</p>
