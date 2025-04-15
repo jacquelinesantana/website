@@ -22,12 +22,15 @@ function Home() {
       
       
 
-      <h3 className="my-4 text-3xl font-extrabold text-lime-800">
+      <h3 className="my-4 text-3xl font-extrabold text-lime-500">
         Chama no WhatsApp!
       </h3>
 
       <button
-        className="mx-auto lg:mx-0 hover:underline bg-white text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
+        className="mx-auto lg:mx-0 hover:underline bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
+        onClick={() => {
+          window.open("https://wa.me/11989809727?text=Quero%20conhecer%20mais%20sobre%20seus%20trabalhos%20de%20site%20e%20sistemas", '_blank')
+        }}  
       >
         Chamar!
       </button>

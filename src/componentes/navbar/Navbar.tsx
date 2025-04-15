@@ -63,6 +63,9 @@ function Navbar() {
           <button
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline text-green-300 font-extrabold hover:text-lime-200 rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"
+            onClick={() => {
+              window.open("https://wa.me/11989809727?text=Quero%20conhecer%20mais%20sobre%20seus%20trabalhos%20de%20site%20e%20sistemas", '_blank')
+            }}
           >
             WhatsApp
           </button>

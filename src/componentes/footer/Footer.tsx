@@ -18,54 +18,54 @@ function Footer() {
 
           
           <div className="flex-1">
-            <p className="uppercase font-extrabold text-gray-300 md:mb-6">Social</p>
+            <p className="uppercase font-extrabold text-neutral-300 md:mb-6">Social</p>
             <ul className="list-reset mb-6">
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="#"
-                  className="font-light no-underline hover:underline text-gray-200 hover:text-orange-500"
+                  className="font-light no-underline hover:underline text-neutral-200 hover:text-lime-300"
                   >Facebook</a
                 >
               </li>
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="#"
-                  className="font-light no-underline hover:underline text-gray-200 hover:text-orange-500"
+                  className="font-light no-underline hover:underline text-neutral-200 hover:text-lime-300"
                   >Linkedin</a
                 >
               </li>
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="#"
-                  className="font-light no-underline hover:underline text-gray-200 hover:text-orange-500"
+                  className="font-light no-underline hover:underline text-neutral-200 hover:text-lime-300"
                   >Twitter</a
                 >
               </li>
             </ul>
           </div>
           <div className="flex-1">
-            <p className="uppercase font-extrabold text-gray-300 md:mb-6">
+            <p className="uppercase font-extrabold text-neutral-300 md:mb-6">
               Company
             </p>
             <ul className="list-reset mb-6">
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="#"
-                  className="font-light no-underline hover:underline text-gray-200 hover:text-orange-500"
+                  className="font-light no-underline hover:underline text-neutral-200 hover:text-lime-300"
                   >Artigos</a
                 >
               </li>
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="#"
-                  className="font-light no-underline hover:underline text-gray-200 hover:text-orange-500"
+                  className="font-light no-underline hover:underline text-neutral-200 hover:text-lime-300"
                   >Sobre</a
                 >
               </li>
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="#"
-                  className="font-light no-underline hover:underline text-gray-200 hover:text-orange-500"
+                  className="font-light no-underline hover:underline text-neutral-200 hover:text-lime-300"
                   >Contato</a
                 >
               </li>
