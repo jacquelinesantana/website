@@ -12,7 +12,7 @@ function Quemsomos() {
       <div
         className="container max-w-5xl mx-auto m-8"
       >
-        <h2
+        <h2 id="quemsomos"
           className="w-full my-2 text-5xl font-black leading-tight text-center text-neutral-200"
         >
           Quem Somos
