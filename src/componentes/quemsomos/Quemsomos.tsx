@@ -1,4 +1,3 @@
-import React from 'react'
 /*
 <section className="bg-gray-100 border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">

@@ -1,4 +1,3 @@
-import React from 'react'
 import Banner from '../../banner/Banner'
 import Quemsomos from '../../quemsomos/Quemsomos'
 import Comoajudar from '../../comoajudar/Comoajudar'
