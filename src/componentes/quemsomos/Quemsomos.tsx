@@ -6,9 +6,9 @@ import React from 'react'
 function Quemsomos() {
   return (
     <>
-      <section className="bg-white border-b py-10 ">
+      <section className="bg-white border-b py-8 ">
       <div
-        className="container max-w-5xl m-8 flex flex-wrap justify-between  "
+        className="ontainer max-w-5xl mx-auto m-8"
       >
         <h2
           className="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8"

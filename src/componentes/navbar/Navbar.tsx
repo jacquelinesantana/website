@@ -13,7 +13,7 @@ function Navbar() {
             className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
-            <img src="https://i.imgur.com/mxGeAAT.png" className="w-36 inline-block fill-current" alt="" />
+            <img src="https://i.imgur.com/Xhdvgxd.png" className="w-46 inline-block fill-current" alt="" />
             
           </a>
         </div>

@@ -3,7 +3,7 @@ import React from 'react'
 function Comoajudar() {
   return (
     <>
-          <section className="bg-gray-100 border-b py-8">
+      <section className="bg-gray-100 border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">
         <h2
           className="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
