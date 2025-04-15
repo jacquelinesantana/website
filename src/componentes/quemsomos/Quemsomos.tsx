@@ -9,9 +9,9 @@
 function Quemsomos() {
   return (
     <>
-      <section className="bg-white border-b py-8 m-8">
+      <section className="bg-white border-b py-8">
       <div
-        className="container"
+        className="container m-8"
       >
         <h2
           className="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8"
@@ -20,7 +20,7 @@ function Quemsomos() {
         </h2>
         
         <div
-          className="flex flex-1 flex-wrap max-w-4xl mx-auto items-center justify-between text-xl text-gray-500 font-bold opacity-75" >
+          className="flex flex-1 flex-wrap max-w-4xl mx-auto items-center justify-between text-xl text-gray-500 font-bold opacity-75 " >
           <p>Transforme sua paixão em resultados online!</p>
           <p>Desde 2017, nossa missão tem sido impulsionar negócios como o seu no universo digital. Sabemos o quanto você se dedica à sua empresa — e é exatamente essa paixão que queremos levar para o seu site.</p>
           <p>Criamos sites e sistemas sob medida, que contam a história do seu negócio de forma autêntica, envolvente e estratégica. Mais do que presença digital, entregamos resultados: sua marca ganhando visibilidade, conectando com pessoas e gerando lucro.</p>
