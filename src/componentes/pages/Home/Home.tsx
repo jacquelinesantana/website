@@ -26,7 +26,7 @@ function Home() {
         ></div>
       </div>
 
-      <h3 className="my-4 text-3xl font-extrabold text-green-900">
+      <h3 className="my-4 text-3xl font-extrabold text-lime-800">
         Chama no WhatsApp!
       </h3>
 
