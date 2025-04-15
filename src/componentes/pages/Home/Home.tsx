@@ -18,13 +18,9 @@ function Home() {
 
    
 
-    <section className="gradient w-full mx-auto text-center pt-6 pb-12">
+    <section className="gradient w-full mx-auto text-center pt-6 pb-12 bg-neutral-900 ">
       
-      <div className="w-full mb-4">
-        <div
-          className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
-        ></div>
-      </div>
+      
 
       <h3 className="my-4 text-3xl font-extrabold text-lime-800">
         Chama no WhatsApp!

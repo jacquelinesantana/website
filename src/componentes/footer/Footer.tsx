@@ -3,8 +3,8 @@ function Footer() {
   return (
     <>
       {/*<!--Footer-->*/}
-    <footer className="bg-black ">
-      <div className="container mx-auto mt-8 px-8">
+    <footer className="bg-black">
+      <div className="container mx-auto mt-0 px-8">
         <div className="w-full flex flex-col md:flex-row py-6">
           <div className="flex-1 mb-6">
             <a
