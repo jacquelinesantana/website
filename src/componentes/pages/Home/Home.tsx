@@ -29,7 +29,10 @@ function Home() {
       <button
         className="mx-auto lg:mx-0 hover:underline bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
         onClick={() => {
-          window.open("https://wa.me/11989809727?text=Quero%20conhecer%20mais%20sobre%20seus%20trabalhos%20de%20site%20e%20sistemas", '_blank')
+          const phoneNumber = "11989809727";
+          const message = "Quero conhecer mais sobre seus trabalhos de site e sistemas";
+          const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+          window.open(url, "_blank");        
         }}  
       >
         Chamar!
