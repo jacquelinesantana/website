@@ -8,11 +8,11 @@
 function Quemsomos() {
   return (
     <>
-      <section className="border-b py-8 bg-neutral-900">
+    <section className="border-b py-8 bg-neutral-900">
       <div
         className="container max-w-5xl mx-auto m-8"
       >
-        <h2 id="quemsomos"
+        <h2 id="quemsomos" tabIndex={0}
           className="w-full my-2 text-5xl font-black leading-tight text-center text-neutral-200"
         >
           Quem Somos

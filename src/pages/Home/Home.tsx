@@ -1,6 +1,6 @@
-import Banner from '../../banner/Banner'
-import Quemsomos from '../../quemsomos/Quemsomos'
-import Comoajudar from '../../comoajudar/Comoajudar'
+import Banner from '../../componentes/banner/Banner'
+import Quemsomos from '../../componentes/quemsomos/Quemsomos'
+import Comoajudar from '../../componentes/comoajudar/Comoajudar'
 
 function Home() {
   return (
