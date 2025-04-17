@@ -35,7 +35,7 @@ function Home() {
           window.open(url, "_blank");        
         }}  
       >
-        Chamar!
+        Comece agora!
       </button>
     </section>
     </>
