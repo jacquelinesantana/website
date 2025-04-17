@@ -20,10 +20,11 @@ function Quemsomos() {
         
         <div
           className=" m-4 flex flex-1 flex-wrap items-center justify-between text-xl text-neutral-300 font-bold opacity-75 " >
-          <p>Transforme sua paixão em resultados online!</p>
+          <p>Transforme sua paixão em resultados online com a TiJacque!</p>
           <p>Desde 2017, nossa missão tem sido impulsionar negócios como o seu no universo digital. Sabemos o quanto você se dedica à sua empresa — e é exatamente essa paixão que queremos levar para o seu site.</p>
           <p>Criamos sites e sistemas sob medida, que contam a história do seu negócio de forma autêntica, envolvente e estratégica. Mais do que presença digital, entregamos resultados: sua marca ganhando visibilidade, conectando com pessoas e gerando lucro.</p>
-          <p>Deixe que a internet trabalhe por você! Aproveite esse mar de oportunidades para crescer, inovar e se destacar.</p>
+{/*           <p>Deixe que a internet trabalhe por você! Aproveite esse mar de oportunidades para crescer, inovar e se destacar.</p>
+ */}          
           <p>Conheça nossos projetos e descubra como podemos transformar seu negócio em uma potência online. Estamos prontos para navegar com você rumo ao sucesso!</p>
         </div>
       </div>

@@ -18,13 +18,12 @@ function Comoajudar() {
             <p className="text-gray-600 mb-8">
             Conecte-se com seu público de forma rápida e eficiente com um website moderno, bonito e totalmente alinhado com a identidade do seu negócio. Desenvolvemos layouts que traduzem a qualidade do seu atendimento, produto ou serviço — tudo pensado para encantar e converter.
               <br />
-              Mas não paramos por aí<br />
+              
               <h3 tabIndex={0}  className="text-3xl text-gray-800 mt-6 font-bold leading-none mb-3">
               Planilhas e Gráficos
               </h3>
               Também criamos dashboards inteligentes, com gráficos interativos alimentados diretamente pelos dados da sua empresa, oferecendo uma visão clara e estratégica para a sua tomada de decisões.
               <br />
-              Precisa de mais praticidade?<br />
               <h3 tabIndex={0}  className="text-3xl text-gray-800 mt-6 font-bold leading-none mb-3">
               Cadastros e Inscrições
               </h3>

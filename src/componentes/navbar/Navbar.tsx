@@ -66,7 +66,7 @@ function Navbar() {
             <li key="servicos">
               <a href="#servicos"
                       className="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-neutral-700 dark:hover:bg-neutral-700">
-                        Como te ajudamos
+                        Serviços
               </a>  
             </li>
             <li key="contato">
