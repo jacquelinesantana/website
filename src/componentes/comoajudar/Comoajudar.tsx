@@ -4,9 +4,8 @@ function Comoajudar() {
     <>
       <section className="bg-gray-100 border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">
-        <h2 tabIndex={0}
-          className="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
-        >
+        <h2 tabIndex={0} id="servicos"
+          className="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
           Como podemos te ajudar?
         </h2>
         
@@ -20,13 +19,13 @@ function Comoajudar() {
             Conecte-se com seu público de forma rápida e eficiente com um website moderno, bonito e totalmente alinhado com a identidade do seu negócio. Desenvolvemos layouts que traduzem a qualidade do seu atendimento, produto ou serviço — tudo pensado para encantar e converter.
               <br />
               Mas não paramos por aí<br />
-              <h3 className="text-3xl text-gray-800 mt-6 font-bold leading-none mb-3">
+              <h3 tabIndex={0}  className="text-3xl text-gray-800 mt-6 font-bold leading-none mb-3">
               Planilhas e Gráficos
               </h3>
               Também criamos dashboards inteligentes, com gráficos interativos alimentados diretamente pelos dados da sua empresa, oferecendo uma visão clara e estratégica para a sua tomada de decisões.
               <br />
               Precisa de mais praticidade?<br />
-              <h3 className="text-3xl text-gray-800 mt-6 font-bold leading-none mb-3">
+              <h3 tabIndex={0}  className="text-3xl text-gray-800 mt-6 font-bold leading-none mb-3">
               Cadastros e Inscrições
               </h3>
               Conte com funcionalidades como inscrições online, controle de pagamentos, cadastro de clientes e fornecedores. Toda a informação que você precisa, a um clique de distância

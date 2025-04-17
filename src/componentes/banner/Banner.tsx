@@ -15,7 +15,7 @@ function Banner() {
       />
       <div className="relative z-10 flex items-center justify-center h-full ">
         <h1 className="text-4xl md:text-6xl text-lime-400 font-bold text-center">
-        Criação de Sites e Sistemas Personalizados para Impulsionar Seu Negócio
+        Sites e Sistemas Personalizados para Impulsionar Seu Negócio
         </h1>
       </div>
     </section>

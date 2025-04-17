@@ -22,7 +22,7 @@ function Home() {
       
       
 
-      <h3 className="my-4 text-3xl font-extrabold text-lime-500">
+      <h3 id='whatsapp' className="my-4 text-3xl font-extrabold text-lime-500">
         Chama no WhatsApp!
       </h3>
 
