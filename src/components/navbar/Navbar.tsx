@@ -4,7 +4,7 @@ function Navbar() {
 
     
     const [open, setOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+   // const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
     <>
     
@@ -89,7 +89,7 @@ function Navbar() {
         </nav>    
 
       </div>
-    </section>
+    </section> 
     </>
   )
 }
