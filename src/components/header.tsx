@@ -15,7 +15,7 @@ export default function Header() {
                     <a href="#about" className="hover:underline">Quem somos</a>
                     <a href="" className="hover:underline">Treinamentos</a>
                     <a href="#servicos" className="hover:underline">Projetos</a>
-                    <a href="#whatsapp" className="hover:underline">Contato</a>
+                    <a href="#contact" className="hover:underline">Contato</a>
                 </nav>
 
                 <Phone />
@@ -41,7 +41,7 @@ export default function Header() {
                             <Separator />
                             <a href="#servicos" className="hover:underline">Projetos</a>
                             <Separator />
-                            <a href="#whatsapp" className="hover:underline">Contato</a>
+                            <a href="#contact" className="hover:underline">Contato</a>
                         </div>
                     </SheetContent>
                 </Sheet>
