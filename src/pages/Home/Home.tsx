@@ -17,8 +17,8 @@ function Home() {
           Chama no WhatsApp!
         </h3>
 
-        <button tabIndex={0}
-          className="mx-auto lg:mx-0 hover:underline bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
+        <button tabIndex={0} id='whatsapp'
+            className="mx-auto lg:mx-0 hover:underline bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
           onClick={() => {
             const phoneNumber = "11989809727";
             const message = "Quero conhecer mais sobre seus trabalhos de site e sistemas";
