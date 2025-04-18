@@ -9,7 +9,7 @@ function Navbar() {
     <>
     
     
-    <nav id="header" className="w-full z-30 top-0 bg-black text-white py-1 lg:py-6">
+    <section id="header" className="w-full z-30 top-0 bg-black text-white py-1 lg:py-6">
       <div
         className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
       >
@@ -89,7 +89,7 @@ function Navbar() {
         </nav>    
 
       </div>
-    </nav>
+    </section>
     </>
   )
 }
