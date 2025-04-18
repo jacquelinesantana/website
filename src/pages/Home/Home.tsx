@@ -1,13 +1,14 @@
-import Banner from '../../components/banner/Banner'
-import Quemsomos from '../../components/quemsomos/Quemsomos'
-import Comoajudar from '../../components/comoajudar/Comoajudar'
+
+import Banner from '@/sections/banner';
+import About from '@/sections/about';
+import Services from '@/sections/services';
 
 function Home() {
   return (
     <>
       <Banner />
-      <Quemsomos />
-      <Comoajudar />
+      <About />
+      <Services />
 
       <section className="gradient w-full mx-auto text-center pt-6 pb-12 bg-neutral-900 ">
 
@@ -18,7 +19,7 @@ function Home() {
         </h3>
 
         <button tabIndex={0} id='whatsapp'
-            className="mx-auto lg:mx-0 hover:underline bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg"
+          className="mx-auto lg:mx-0 hover:underline bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 shadow-lg cursor-pointer"
           onClick={() => {
             const phoneNumber = "11989809727";
             const message = "Quero conhecer mais sobre seus trabalhos de site e sistemas";
