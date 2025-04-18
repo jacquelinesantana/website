@@ -54,7 +54,7 @@ function Navbar() {
           className={`${
             open ? "block" : "hidden"
           } md:flex md:items-center md:justify-between pb-4 md:pb-0`}
-          role="navigation"
+          role="navigation" 
         >
           <ul className="flex flex-col md:flex-row md:space-x-4">
             <li key="quemsomos">
@@ -66,13 +66,13 @@ function Navbar() {
             <li key="servicos">
               <a href="#servicos"
                       className="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-neutral-700 dark:hover:bg-neutral-700">
-                        Serviços
+                        Serviços 
               </a>  
             </li>
             <li key="contato">
               <a href="#whatsapp"
                       className="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-neutral-700 dark:hover:bg-neutral-700">
-                        Contato
+                        Contato 
               </a>  
             </li>
             {/* <li key="">
