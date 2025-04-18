@@ -14,7 +14,7 @@ export default function Header() {
                     <a href="#inicio" className="hover:underline">Início</a>
                     <a href="#quemsomos" className="hover:underline">Quem somos</a>
                     <a href="" className="hover:underline">Treinamentos</a>
-                    <a href="#serviços" className="hover:underline">Projetos</a>
+                    <a href="#servicos" className="hover:underline">Projetos</a>
                     <a href="#whatsapp" className="hover:underline">Contato</a>
                 </nav>
 
