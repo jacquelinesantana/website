@@ -11,11 +11,11 @@ export default function Header() {
                 <LaptopMinimal className="h-6 w-6" />
 
                 <nav className="flex gap-6">
-                    <a href="" className="hover:underline">Início</a>
-                    <a href="" className="hover:underline">Quem somos</a>
+                    <a href="#inicio" className="hover:underline">Início</a>
+                    <a href="#quemsomos" className="hover:underline">Quem somos</a>
                     <a href="" className="hover:underline">Treinamentos</a>
-                    <a href="" className="hover:underline">Projetos</a>
-                    <a href="" className="hover:underline">Contato</a>
+                    <a href="#serviços" className="hover:underline">Projetos</a>
+                    <a href="#whatsapp" className="hover:underline">Contato</a>
                 </nav>
 
                 <Phone />
@@ -33,15 +33,15 @@ export default function Header() {
                     </SheetTrigger>
                     <SheetContent side="right" className="w-[200px]">
                         <div className="flex flex-col gap-4 mt-6 ml-2">
-                            <a href="#" className="hover:underline">Início</a>
+                            <a href="#inicio" className="hover:underline">Início</a>
                             <Separator />
-                            <a href="" className="hover:underline">Quem somos</a>
+                            <a href="#quemsomos" className="hover:underline">Quem somos</a>
                             <Separator />
                             <a href="" className="hover:underline">Treinamentos</a>
                             <Separator />
-                            <a href="/projetos" className="hover:underline">Projetos</a>
+                            <a href="#servicos" className="hover:underline">Projetos</a>
                             <Separator />
-                            <a href="/contato" className="hover:underline">Contato</a>
+                            <a href="#whatsapp" className="hover:underline">Contato</a>
                         </div>
                     </SheetContent>
                 </Sheet>

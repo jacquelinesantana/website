@@ -14,7 +14,7 @@ function Banner() {
         }}
       />
       <div className="relative z-10 flex items-center justify-center h-full ">
-        <h1 className="text-4xl md:text-6xl text-lime-400 font-bold text-center">
+        <h1 id="inicio" className="text-4xl md:text-6xl text-lime-400 font-bold text-center">
         Sites e Sistemas Personalizados para Impulsionar Seu Negócio
         </h1>
       </div>
