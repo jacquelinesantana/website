@@ -1,12 +1,14 @@
 import Banner from '../../components/banner/Banner'
 import Quemsomos from '../../components/quemsomos/Quemsomos'
 import Comoajudar from '../../components/comoajudar/Comoajudar'
+import Card from '@/components/cardsEquipe/Card';
 
 function Home() {
   return (
     <>
       <Banner />
       <Quemsomos />
+      <Card />
       <Comoajudar />
 
       <section className="gradient w-full mx-auto text-center pt-6 pb-12 bg-neutral-900 ">
