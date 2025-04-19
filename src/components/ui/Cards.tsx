@@ -7,7 +7,7 @@ interface cardProps{
 function Cards(props: cardProps) {
   return (
     <>
-      <div className="w-5/6 sm:w-5/2 p-6 sm:p-2 md:w-5/2 ">
+      <div className="w-5/6 sm:w-1/2 p-6 sm:p-2 ">
         <div className="card bg-base-100 image-full  shadow-sm">
             <figure>
                 <img
