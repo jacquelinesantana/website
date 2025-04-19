@@ -26,5 +26,4 @@ function Cards(props: cardProps) {
     </>
   )
 }
-
 export default Cards

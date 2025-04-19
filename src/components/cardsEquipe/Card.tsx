@@ -1,5 +1,4 @@
 import Cards from "../ui/Cards"
-
 function Card() {
   return (
     <>
