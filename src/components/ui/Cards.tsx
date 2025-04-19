@@ -8,7 +8,7 @@ function Cards(props: cardProps) {
   return (
     <>
       <div className="w-5/6 sm:w-1/2 p-6 sm:p-2 ">
-        <div className="card bg-base-100 image-full  shadow-sm">
+        <div className="card bg-base-100 image-full  shadow-sm min-h-80">
             <figure>
                 <img
                 src={props.foto}
