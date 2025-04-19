@@ -1,4 +1,3 @@
-import { Car } from "lucide-react"
 import Cards from "../ui/Cards"
 
 function Card() {
