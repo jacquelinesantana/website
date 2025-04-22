@@ -3,7 +3,7 @@ import About from '@/sections/about';
 import Services from '@/sections/services';
 import Contact from '@/sections/contact';
 
-function Home() {
+export default function Home() {
   return (
     <>
       <Banner />
@@ -14,4 +14,3 @@ function Home() {
   )
 }
 
-export default Home
