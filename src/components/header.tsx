@@ -1,51 +1,103 @@
-import { LaptopMinimal, Menu, Phone } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { useState } from "react";
 import { Button } from "./ui/button";
-import { Separator } from "./ui/separator";
 
-export default function Header() {
-    return (
-        <div className="border-b">
+export function Header() {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-            <div className="hidden md:flex justify-between m-8">
-                <LaptopMinimal className="h-6 w-6" />
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 
-                <nav className="flex gap-6">
-                    <a href="#home" className="hover:underline">Início</a>
-                    <a href="#about" className="hover:underline">Quem somos</a>
-                    <a href="" className="hover:underline">Treinamentos</a>
-                    <a href="#servicos" className="hover:underline">Projetos</a>
-                    <a href="#contact" className="hover:underline">Contato</a>
-                </nav>
+	return (
+		<header id="header"
+			className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-white bg-black/50 backdrop-blur-sm">
+			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
+				<div className="flex items-center">
+					<i className="fas fa-code text-2xl text-purple-500 mr-2"></i>
+					<span className="text-xl font-bold">DevDuo</span>
+				</div>
 
-                <Phone />
+				<div className="hidden md:flex items-center space-x-8">
+					<a
+						href="#inicio"
+						className="hover:text-purple-500 transition-colors"
+					>
+						Início
+					</a>
+					<a
+						href="#servicos"
+						className="hover:text-purple-500 transition-colors"
+					>
+						Serviços
+					</a>
+					<a
+						href="#portfolio"
+						className="hover:text-purple-500 transition-colors"
+					>
+						Portfólio
+					</a>
+					<a
+						href="#sobre"
+						className="hover:text-purple-500 transition-colors"
+					>
+						Sobre Nós
+					</a>
+					<Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white !rounded-button whitespace-nowrap cursor-pointer">
+						Fale Conosco
+					</Button>
+				</div>
 
-            </div>
+				<div className="md:hidden">
+					<Button
+						variant="ghost"
+						size="icon"
+						onClick={toggleMenu}
+						className="text-white hover:bg-white/10 cursor-pointer !rounded-button whitespace-nowrap"
+					>
+						<i
+							className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-xl`}
+						></i>
+					</Button>
+				</div>
+			</div>
 
-            <div className="flex justify-between m-4 md:hidden">
-                <LaptopMinimal className="h-10 w-10" />
-
-                <Sheet>
-                    <SheetTrigger asChild>
-                        <Button>
-                            <Menu />
-                        </Button>
-                    </SheetTrigger>
-                    <SheetContent side="right" className="w-[200px]">
-                        <div className="flex flex-col gap-4 mt-6 ml-2">
-                            <a href="#home" className="hover:underline">Início</a>
-                            <Separator />
-                            <a href="#about" className="hover:underline">Quem somos</a>
-                            <Separator />
-                            <a href="" className="hover:underline">Treinamentos</a>
-                            <Separator />
-                            <a href="#servicos" className="hover:underline">Projetos</a>
-                            <Separator />
-                            <a href="#contact" className="hover:underline">Contato</a>
-                        </div>
-                    </SheetContent>
-                </Sheet>
-            </div>
-        </div>
-    )
+			{isMenuOpen && (
+				<div className="md:hidden bg-black/95 backdrop-blur-md">
+					<div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+						<a
+							href="#inicio"
+							className="py-2 hover:text-purple-500 transition-colors"
+							onClick={toggleMenu}
+						>
+							Início
+						</a>
+						<a
+							href="#servicos"
+							className="py-2 hover:text-purple-500 transition-colors"
+							onClick={toggleMenu}
+						>
+							Serviços
+						</a>
+						<a
+							href="#portfolio"
+							className="py-2 hover:text-purple-500 transition-colors"
+							onClick={toggleMenu}
+						>
+							Portfólio
+						</a>
+						<a
+							href="#sobre"
+							className="py-2 hover:text-purple-500 transition-colors"
+							onClick={toggleMenu}
+						>
+							Sobre Nós
+						</a>
+						<Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white !rounded-button whitespace-nowrap cursor-pointer">
+							Fale Conosco
+						</Button>
+					</div>
+				</div>
+			)}
+		</header>
+	)
 }
