@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export default function About() {
+export function About() {
     return (
         <section id="sobre" className="py-24 bg-black text-white">
             <div className="container mx-auto px-4">

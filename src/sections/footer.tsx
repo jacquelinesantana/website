@@ -1,3 +1,5 @@
+import { CodeIcon, PhoneIcon, MailIcon, ClockIcon } from "lucide-react";
+
 export function Footer() {
     return (
         <footer className="bg-gray-950 py-16 text-white">
@@ -5,82 +7,67 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="md:col-span-1">
                         <div className="flex items-center mb-4">
-                            <i className="fas fa-code text-2xl text-purple-500 mr-2"></i>
-                            <span className="text-xl font-bold">DevDuo</span>
+                            <CodeIcon className="text-2xl text-purple-500 mr-2" />
+                            <span className="text-xl font-bold">SintoniaTech</span>
                         </div>
                         <p className="text-gray-400 mb-6">
-                            Transformando ideias em código desde 2020. Soluções digitais
+                            Transformando ideias em código desde 2018. Soluções digitais
                             personalizadas para impulsionar seu negócio.
                         </p>
-                        <div className="flex space-x-4">
+                        {/* <div className="flex space-x-4">
                             <a
                                 href="#"
                                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-purple-600 hover:text-white transition-colors cursor-pointer"
                             >
-                                <i className="fab fa-facebook-f"></i>
+                                <FacebookIcon className="text-gray-400" />
                             </a>
                             <a
                                 href="#"
                                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-purple-600 hover:text-white transition-colors cursor-pointer"
                             >
-                                <i className="fab fa-instagram"></i>
+                                <InstagramIcon className="text-gray-400" />
                             </a>
                             <a
                                 href="#"
                                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-purple-600 hover:text-white transition-colors cursor-pointer"
                             >
-                                <i className="fab fa-linkedin-in"></i>
+                                <LinkedinIcon className="text-gray-400" />
                             </a>
                             <a
                                 href="#"
                                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-purple-600 hover:text-white transition-colors cursor-pointer"
                             >
-                                <i className="fab fa-github"></i>
+                                <GithubIcon className="text-gray-400" />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div>
                         <h3 className="text-lg font-bold mb-4">Serviços</h3>
                         <ul className="space-y-3">
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors">
                                     Websites
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors">
                                     E-commerce
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors">
                                     Sistemas
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors">
                                     Aplicativos
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
-                                    Consultoria
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors">
+                                    Tutoriais
                                 </a>
                             </li>
                         </ul>
@@ -90,42 +77,17 @@ export function Footer() {
                         <h3 className="text-lg font-bold mb-4">Links Úteis</h3>
                         <ul className="space-y-3">
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
-                                    Sobre Nós
+                                <a href="#servicos" className="text-gray-400 hover:text-purple-400 transition-colors">
+                                    Serviços
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
+                                <a href="portfolio" className="text-gray-400 hover:text-purple-400 transition-colors">
                                     Portfólio
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
-                                    Carreiras
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                                >
+                                <a href="#contato" className="text-gray-400 hover:text-purple-400 transition-colors">
                                     Contato
                                 </a>
                             </li>
@@ -135,22 +97,22 @@ export function Footer() {
                     <div>
                         <h3 className="text-lg font-bold mb-4">Contato</h3>
                         <ul className="space-y-3">
-                            <li className="flex items-start">
-                                <i className="fas fa-map-marker-alt text-purple-500 mt-1 mr-3"></i>
+                            {/* <li className="flex items-start">
+                                <MapPinIcon className="text-purple-500 mt-1 mr-3" />
                                 <span className="text-gray-400">
                                     Av. Paulista, 1000, São Paulo - SP
                                 </span>
-                            </li>
+                            </li> */}
                             <li className="flex items-center">
-                                <i className="fas fa-phone-alt text-purple-500 mr-3"></i>
+                                <PhoneIcon className="text-purple-500 mr-3" />
                                 <span className="text-gray-400">(11) 99999-9999</span>
                             </li>
                             <li className="flex items-center">
-                                <i className="fas fa-envelope text-purple-500 mr-3"></i>
+                                <MailIcon className="text-purple-500 mr-3" />
                                 <span className="text-gray-400">contato@devduo.com.br</span>
                             </li>
                             <li className="flex items-center">
-                                <i className="fas fa-clock text-purple-500 mr-3"></i>
+                                <ClockIcon className="text-purple-500 mr-3" />
                                 <span className="text-gray-400">Seg-Sex: 9h às 18h</span>
                             </li>
                         </ul>
@@ -159,7 +121,7 @@ export function Footer() {
 
                 <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
-                        © 2025 DevDuo. Todos os direitos reservados.
+                        © 2025 SintoniaTech. Todos os direitos reservados.
                     </p>
                     <div className="flex space-x-4">
                         <a

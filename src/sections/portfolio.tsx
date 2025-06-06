@@ -1,5 +1,10 @@
-import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import imgEcommerce from '@/assets/img/img_ecommerce.jpg'
+import imgDash from '@/assets/img/img_dash.jpg'
+import imgDelivery from '@/assets/img/img_delivery.jpg'
+import imgScorporativo from '@/assets/img/img_scorporativo.jpg'
+import imgSgestao from '@/assets/img/img_sgestao.jpg'
+import imgLanding from '@/assets/img/img_landing.jpg'
 
 export function Portfolio() {
     return (
@@ -25,7 +30,7 @@ export function Portfolio() {
                             title: "E-commerce de Moda",
                             category: "E-commerce",
                             image:
-                                "https://readdy.ai/api/search-image?query=modern%20fashion%20e-commerce%20website%20interface%20with%20purple%20and%20dark%20theme%2C%20showing%20clothing%20products%20grid%20layout%2C%20clean%20and%20professional%20design%20with%20shopping%20cart%20icon%2C%20high%20quality%20mockup%20on%20laptop%20screen&width=600&height=400&seq=port1&orientation=landscape",
+                                imgEcommerce,
                             description:
                                 "Desenvolvimento completo de loja virtual com integração de pagamentos e gestão de estoque.",
                         },
@@ -34,7 +39,7 @@ export function Portfolio() {
                             title: "Dashboard Analítico",
                             category: "Sistema",
                             image:
-                                "https://readdy.ai/api/search-image?query=data%20analytics%20dashboard%20with%20dark%20theme%2C%20purple%20and%20blue%20graphs%2C%20charts%20and%20statistics%20visualization%2C%20modern%20UI%20design%20with%20clean%20layout%2C%20business%20intelligence%20interface%20on%20computer%20screen&width=600&height=400&seq=port2&orientation=landscape",
+                                imgDash,
                             description:
                                 "Sistema de análise de dados com visualizações interativas e relatórios personalizados.",
                         },
@@ -43,7 +48,7 @@ export function Portfolio() {
                             title: "App de Delivery",
                             category: "Aplicativo",
                             image:
-                                "https://readdy.ai/api/search-image?query=food%20delivery%20mobile%20app%20interface%20with%20dark%20theme%20and%20purple%20accents%2C%20showing%20restaurant%20listings%2C%20order%20tracking%20and%20payment%20options%2C%20modern%20UI%20design%20on%20smartphone%20screen&width=600&height=400&seq=port3&orientation=landscape",
+                                imgDelivery,
                             description:
                                 "Aplicativo mobile para pedidos online com rastreamento em tempo real.",
                         },
@@ -52,7 +57,7 @@ export function Portfolio() {
                             title: "Site Corporativo",
                             category: "Website",
                             image:
-                                "https://readdy.ai/api/search-image?query=elegant%20corporate%20website%20with%20dark%20theme%20and%20purple%20gradient%20elements%2C%20professional%20business%20layout%20with%20services%20section%2C%20team%20profiles%20and%20contact%20form%2C%20modern%20web%20design%20on%20desktop%20screen&width=600&height=400&seq=port4&orientation=landscape",
+                                imgScorporativo,
                             description:
                                 "Website institucional com design moderno e otimizado para conversão.",
                         },
@@ -61,7 +66,7 @@ export function Portfolio() {
                             title: "Sistema de Gestão",
                             category: "Sistema",
                             image:
-                                "https://readdy.ai/api/search-image?query=business%20management%20system%20interface%20with%20dark%20theme%20and%20purple%20elements%2C%20showing%20project%20management%20dashboard%2C%20task%20tracking%20and%20resource%20allocation%2C%20professional%20UI%20design%20on%20laptop%20screen&width=600&height=400&seq=port5&orientation=landscape",
+                                imgSgestao,
                             description:
                                 "ERP personalizado para gestão completa de processos empresariais.",
                         },
@@ -70,7 +75,7 @@ export function Portfolio() {
                             title: "Landing Page",
                             category: "Website",
                             image:
-                                "https://readdy.ai/api/search-image?query=conversion-focused%20landing%20page%20with%20dark%20theme%20and%20purple%20call-to-action%20buttons%2C%20product%20showcase%20with%20features%20list%2C%20testimonials%20section%2C%20clean%20and%20modern%20web%20design%20on%20desktop%20screen&width=600&height=400&seq=port6&orientation=landscape",
+                                imgLanding,
                             description:
                                 "Página de conversão para produto digital com alta taxa de conversão.",
                         },
@@ -116,12 +121,9 @@ export function Portfolio() {
                                         Sobre o Projeto
                                     </h4>
                                     <p className="text-gray-300 mb-4">
-                                        {project.description} Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Nullam at justo vel nisi
-                                        fermentum tincidunt. Mauris eget magna eget nunc varius
-                                        ultrices.
+                                        {project.description}
                                     </p>
-                                    <div className="flex flex-wrap gap-2 mb-4">
+                                    {/* <div className="flex flex-wrap gap-2 mb-4">
                                         <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">
                                             React
                                         </span>
@@ -137,21 +139,21 @@ export function Portfolio() {
                                     </div>
                                     <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 !rounded-button whitespace-nowrap cursor-pointer">
                                         Ver Projeto Completo
-                                    </Button>
+                                    </Button> */}
                                 </div>
                             </DialogContent>
                         </Dialog>
                     ))}
                 </div>
 
-                <div className="text-center mt-12">
+                {/* <div className="text-center mt-12">
                     <Button
                         variant="outline"
                         className="border-white/30 hover:bg-white/10 !rounded-button whitespace-nowrap cursor-pointer"
                     >
                         Ver Todos os Projetos
                     </Button>
-                </div>
+                </div> */}
             </div>
         </section >
     )

@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { LaptopIcon, ShoppingCartIcon, SmartphoneIcon, ChartLineIcon, TagsIcon, CogIcon } from "lucide-react";
 
-export default function Services() {
+export function Services() {
     const [activeTab, setActiveTab] = useState<string>("sites");
     return (
         <section id="servicos" className="py-24 bg-black text-white">
@@ -45,9 +46,9 @@ export default function Services() {
                             <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                                 <CardHeader>
                                     <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
-                                        <i className="fas fa-laptop text-purple-400 text-xl"></i>
+                                        <LaptopIcon className="text-purple-400 text-xl" />
                                     </div>
-                                    <CardTitle>Sites Institucionais</CardTitle>
+                                    <CardTitle className="text-2xl font-bold text-white">Sites Institucionais</CardTitle>
                                     <CardDescription className="text-gray-400">
                                         Apresente sua empresa com elegância e profissionalismo
                                     </CardDescription>
@@ -78,9 +79,9 @@ export default function Services() {
                             <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                                 <CardHeader>
                                     <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
-                                        <i className="fas fa-shopping-cart text-purple-400 text-xl"></i>
+                                        <ShoppingCartIcon className="text-purple-400 text-xl" />
                                     </div>
-                                    <CardTitle>E-commerce</CardTitle>
+                                    <CardTitle className="text-2xl font-bold text-white">E-commerce</CardTitle>
                                     <CardDescription className="text-gray-400">
                                         Venda seus produtos online com facilidade
                                     </CardDescription>
@@ -111,9 +112,9 @@ export default function Services() {
                             <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                                 <CardHeader>
                                     <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
-                                        <i className="fas fa-mobile-alt text-purple-400 text-xl"></i>
+                                        <SmartphoneIcon className="text-purple-400 text-xl" />
                                     </div>
-                                    <CardTitle>Landing Pages</CardTitle>
+                                    <CardTitle className="text-2xl font-bold text-white">Landing Pages</CardTitle>
                                     <CardDescription className="text-gray-400">
                                         Páginas otimizadas para conversão
                                     </CardDescription>
@@ -148,9 +149,9 @@ export default function Services() {
                             <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                                 <CardHeader>
                                     <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
-                                        <i className="fas fa-chart-line text-purple-400 text-xl"></i>
+                                        <ChartLineIcon className="text-purple-400 text-xl" />
                                     </div>
-                                    <CardTitle>CRM</CardTitle>
+                                    <CardTitle className="text-2xl font-bold text-white">CRM</CardTitle>
                                     <CardDescription className="text-gray-400">
                                         Gerencie seus clientes e vendas
                                     </CardDescription>
@@ -181,9 +182,9 @@ export default function Services() {
                             <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                                 <CardHeader>
                                     <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
-                                        <i className="fas fa-tasks text-purple-400 text-xl"></i>
+                                        <TagsIcon className="text-purple-400 text-xl" />
                                     </div>
-                                    <CardTitle>ERP</CardTitle>
+                                    <CardTitle className="text-2xl font-bold text-white">ERP</CardTitle>
                                     <CardDescription className="text-gray-400">
                                         Integre todos os processos da sua empresa
                                     </CardDescription>
@@ -214,9 +215,9 @@ export default function Services() {
                             <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                                 <CardHeader>
                                     <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
-                                        <i className="fas fa-cogs text-purple-400 text-xl"></i>
+                                        <CogIcon className="text-purple-400 text-xl" />
                                     </div>
-                                    <CardTitle>Sistemas Personalizados</CardTitle>
+                                    <CardTitle className="text-2xl font-bold text-white">Sistemas Personalizados</CardTitle>
                                     <CardDescription className="text-gray-400">
                                         Soluções sob medida para seu negócio
                                     </CardDescription>

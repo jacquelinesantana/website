@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
+import { CodeIcon, MenuIcon } from "lucide-react";
 
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +14,8 @@ export function Header() {
 			className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-white bg-black/50 backdrop-blur-sm">
 			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 				<div className="flex items-center">
-					<i className="fas fa-code text-2xl text-purple-500 mr-2"></i>
-					<span className="text-xl font-bold">DevDuo</span>
+					<CodeIcon className="text-2xl text-purple-500 mr-2" />
+					<span className="text-xl font-bold">SintoniaTech</span>
 				</div>
 
 				<div className="hidden md:flex items-center space-x-8">
@@ -36,12 +37,12 @@ export function Header() {
 					>
 						Portfólio
 					</a>
-					<a
+					{/* <a
 						href="#sobre"
 						className="hover:text-purple-500 transition-colors"
 					>
 						Sobre Nós
-					</a>
+					</a> */}
 					<Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white !rounded-button whitespace-nowrap cursor-pointer">
 						Fale Conosco
 					</Button>
@@ -52,11 +53,9 @@ export function Header() {
 						variant="ghost"
 						size="icon"
 						onClick={toggleMenu}
-						className="text-white hover:bg-white/10 cursor-pointer !rounded-button whitespace-nowrap"
+						className="text-white hover:bg-white/50 cursor-pointer !rounded-button whitespace-nowrap"
 					>
-						<i
-							className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-xl`}
-						></i>
+						<MenuIcon className={`text-xl ${isMenuOpen ? "fa-times" : "fa-bars"}`} />
 					</Button>
 				</div>
 			</div>

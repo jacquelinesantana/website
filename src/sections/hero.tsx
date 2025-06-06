@@ -1,6 +1,46 @@
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import backgroundImage from "@/assets/img/img_hero.jpg"
 
 export function Hero() {
+    const [currentText, setCurrentText] = useState<string>('');
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
+    const [charIndex, setCharIndex] = useState<number>(0);
+    const [isDeleting, setIsDeleting] = useState<boolean>(false);
+
+    const TEXTS = [
+        "Transformando ideias em código",
+        "Criando soluções digitais inovadoras",
+        "Desenvolvendo o futuro da web",
+        "Construindo experiências únicas",
+        "Programando sonhos em realidade"
+    ];
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            const current = TEXTS[currentIndex];
+
+            if (isDeleting) {
+                setCurrentText(current.substring(0, charIndex - 1));
+                setCharIndex(charIndex - 1);
+
+                if (charIndex === 0) {
+                    setIsDeleting(false);
+                    setCurrentIndex((currentIndex + 1) % TEXTS.length);
+                }
+            } else {
+                setCurrentText(current.substring(0, charIndex + 1));
+                setCharIndex(charIndex + 1);
+
+                if (charIndex === current.length) {
+                    setTimeout(() => setIsDeleting(true), 2000);
+                }
+            }
+        }, isDeleting ? 50 : 100);
+
+        return () => clearTimeout(timeout);
+    }, [charIndex, isDeleting, currentIndex, TEXTS]);
+
+
     return (
         <>
             <section
@@ -10,7 +50,7 @@ export function Hero() {
                 <div
                     className="absolute inset-0 z-0"
                     style={{
-                        backgroundImage: `url('https://readdy.ai/api/search-image?query=futuristic%20digital%20landscape%20with%20code%20elements%2C%20purple%20and%20blue%20neon%20lights%2C%20abstract%20technology%20concept%20with%20floating%20data%20streams%20and%20circuit%20patterns%2C%20dark%20background%20with%20vibrant%20tech%20elements%2C%20high%20resolution%20digital%20art&width=1440&height=800&seq=hero1&orientation=landscape')`,
+                        backgroundImage: `url(${backgroundImage})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
@@ -20,23 +60,27 @@ export function Hero() {
                 </div>
 
                 <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div className="space-y-6">
-                            <div className="inline-block px-4 py-2 bg-purple-900/50 backdrop-blur-sm rounded-full text-sm">
+                    <div className="grid grid-cols-1 gap-8 items-center text-center">
+                        <div className="space-y-6 mx-auto max-w-3xl">
+                            {/* <div className="inline-block px-4 py-2 bg-purple-900/50 backdrop-blur-sm rounded-full text-sm">
                                 Transformando ideias em código
-                            </div>
-                            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                            </div> */}
+                            {/* <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                                 Desenvolvimento{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
                                     Descomplicado
                                 </span>
+                            </h1> */}
+
+                            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                                {currentText}
                             </h1>
-                            <p className="text-lg text-gray-300 max-w-xl">
+                            <p className="text-lg text-gray-300 mx-auto">
                                 Uma dupla de desenvolvedores apaixonados por criar soluções
                                 digitais que impulsionam o seu negócio. Sites, sistemas e
                                 aplicações com design moderno e código limpo.
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-4">
+                            {/* <div className="flex flex-col sm:flex-row gap-4">
                                 <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer">
                                     Iniciar Projeto
                                 </Button>
@@ -46,14 +90,7 @@ export function Hero() {
                                 >
                                     Ver Portfólio
                                 </Button>
-                            </div>
-                        </div>
-                        <div className="hidden lg:block">
-                            <img
-                                src="https://readdy.ai/api/search-image?query=astronaut%20in%20space%20suit%20floating%20with%20laptop%20and%20holographic%20screens%20displaying%20code%2C%20digital%20art%20with%20vibrant%20purple%20and%20blue%20lighting%2C%20space%20background%20with%20earth%20visible%2C%20futuristic%20technology%20concept&width=600&height=600&seq=hero2&orientation=squarish"
-                                alt="Desenvolvedor espacial"
-                                className="w-full h-auto rounded-lg shadow-2xl"
-                            />
+                            </div> */}
                         </div>
                     </div>
                 </div>

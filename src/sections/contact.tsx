@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
+import backgroundImage from "@/assets/img/img_contact.jpg"
 
-export default function Contact() {
+export function Contact() {
 
     // function handleWhatsApp(): void {
     //     const PHONE_NUMBER = "11989809727"
@@ -10,11 +11,11 @@ export default function Contact() {
     // }
 
     return (
-        <section className="py-24 relative text-white">
+        <section id="contato" className="py-24 relative text-white">
             <div
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: `url('https://readdy.ai/api/search-image?query=abstract%20digital%20landscape%20with%20code%20elements%20and%20futuristic%20technology%20patterns%2C%20dark%20background%20with%20purple%20and%20blue%20neon%20accents%2C%20modern%20tech%20concept%20art&width=1440&height=600&seq=cta&orientation=landscape')`,
+                    backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -34,14 +35,9 @@ export default function Contact() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer">
-                            Solicitar Orçamento
+                            Chama no WhatsApp!
                         </Button>
-                        <Button
-                            variant="outline"
-                            className="border-white/30 hover:bg-white/10 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer"
-                        >
-                            <i className="fab fa-whatsapp mr-2"></i> Falar no WhatsApp
-                        </Button>
+
                     </div>
                 </div>
             </div>

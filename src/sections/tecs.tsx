@@ -1,3 +1,18 @@
+import {
+    Code2,
+    Server,
+    FileJson,
+    FileCode,
+    Paintbrush,
+    Binary,
+    Blocks,
+    Braces,
+    Cloud,
+    Container,
+    GitBranch,
+    Workflow
+} from 'lucide-react';
+
 export function Tecs() {
     return (
         <section className="py-16 bg-gradient-to-b from-purple-950/80 to-black text-white">
@@ -14,22 +29,22 @@ export function Tecs() {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
                     {[
-                        { name: "React", icon: "fab fa-react" },
-                        { name: "Node.js", icon: "fab fa-node-js" },
-                        { name: "JavaScript", icon: "fab fa-js" },
-                        { name: "HTML5", icon: "fab fa-html5" },
-                        { name: "CSS3", icon: "fab fa-css3-alt" },
-                        { name: "PHP", icon: "fab fa-php" },
-                        { name: "WordPress", icon: "fab fa-wordpress" },
-                        { name: "Python", icon: "fab fa-python" },
-                        { name: "AWS", icon: "fab fa-aws" },
-                        { name: "Docker", icon: "fab fa-docker" },
-                        { name: "Git", icon: "fab fa-git-alt" },
-                        { name: "Laravel", icon: "fab fa-laravel" },
+                        { name: "React", Icon: Code2 },
+                        { name: "Node.js", Icon: Server },
+                        { name: "JavaScript", Icon: FileJson },
+                        { name: "PHP", Icon: Binary },
+                        { name: "WordPress", Icon: Blocks },
+                        { name: "Laravel", Icon: Workflow },
+                        // { name: "CSS3", Icon: Paintbrush },
+                        // { name: "HTML5", Icon: FileCode },
+                        // { name: "Python", Icon: Braces },
+                        // { name: "AWS", Icon: Cloud },
+                        // { name: "Docker", Icon: Container },
+                        // { name: "Git", Icon: GitBranch },
                     ].map((tech, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div className="w-16 h-16 rounded-full bg-gray-900/80 flex items-center justify-center mb-3">
-                                <i className={`${tech.icon} text-3xl text-purple-400`}></i>
+                                <tech.Icon className="w-8 h-8 text-purple-400" />
                             </div>
                             <p className="text-gray-300">{tech.name}</p>
                         </div>
