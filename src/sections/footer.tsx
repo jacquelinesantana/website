@@ -105,11 +105,11 @@ export function Footer() {
                             </li> */}
                             <li className="flex items-center">
                                 <PhoneIcon className="text-purple-500 mr-3" />
-                                <span className="text-gray-400">(11) 99999-9999</span>
+                                <span className="text-gray-400">(11) 98980-9727</span>
                             </li>
                             <li className="flex items-center">
                                 <MailIcon className="text-purple-500 mr-3" />
-                                <span className="text-gray-400">contato@devduo.com.br</span>
+                                <span className="text-gray-400">admin@sintoniatech.online</span>
                             </li>
                             <li className="flex items-center">
                                 <ClockIcon className="text-purple-500 mr-3" />

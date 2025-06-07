@@ -2,14 +2,8 @@ import {
     Code2,
     Server,
     FileJson,
-    FileCode,
-    Paintbrush,
     Binary,
     Blocks,
-    Braces,
-    Cloud,
-    Container,
-    GitBranch,
     Workflow
 } from 'lucide-react';
 
