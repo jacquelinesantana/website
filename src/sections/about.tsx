@@ -14,7 +14,7 @@ export function About() {
                         Conheça Nossa Equipe
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                        Uma equipe de desenvolvedores apaixonados por tecnologia e
+                        Uma equipe  de desenvolvedores apaixonados por tecnologia e
                         inovação, prontos para transformar suas ideias em realidade.
                     </p>
                 </div>
