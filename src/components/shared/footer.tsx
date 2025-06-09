@@ -1,4 +1,5 @@
 import { CodeIcon, PhoneIcon, MailIcon, ClockIcon } from "lucide-react";
+import { Link as ScrollLink } from "react-scroll";
 
 export function Footer() {
     return (
@@ -72,19 +73,19 @@ export function Footer() {
                         <h3 className="text-lg font-bold mb-4">Links Úteis</h3>
                         <ul className="space-y-3">
                             <li>
-                                <a href="#servicos" className="text-gray-400 hover:text-purple-400 transition-colors">
-                                    Serviços
-                                </a>
+                                <ScrollLink to="servicos"
+                                    className="cursor-pointer text-gray-400 hover:text-purple-400 transition-colors" smooth={true}
+                                    duration={500}>Serviços</ScrollLink>
                             </li>
                             <li>
-                                <a href="#portfolio" className="text-gray-400 hover:text-purple-400 transition-colors">
-                                    Portfólio
-                                </a>
+                                <ScrollLink to="portfolio"
+                                    className="cursor-pointer text-gray-400 hover:text-purple-400 transition-colors" smooth={true}
+                                    duration={500}>Portfólio</ScrollLink>
                             </li>
                             <li>
-                                <a href="#contato" className="text-gray-400 hover:text-purple-400 transition-colors">
-                                    Contato
-                                </a>
+                                <ScrollLink to="contato"
+                                    className="cursor-pointer text-gray-400 hover:text-purple-400 transition-colors" smooth={true}
+                                    duration={500}>Contato</ScrollLink>
                             </li>
                         </ul>
                     </div>
@@ -141,47 +142,5 @@ export function Footer() {
                 </div>
             </div>
         </footer>
-
-        // <footer className="mt-5">
-        //     <div className="container mx-auto mt-0 px-8">
-        //         <div className="w-full flex flex-col md:flex-row py-6">
-        //             <div className="flex-1 mb-6">
-        //                 <a className="text-lime-300 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-        //                     TiJacque
-        //                 </a>
-        //             </div>
-
-        //             <div className="flex-1">
-        //                 <p className="uppercase font-extrabold text-neutral-800 md:mb-6">Social</p>
-        //                 <ul className="list-reset mb-6">
-        //                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-        //                         <a href="#" className="font-light no-underline hover:underline text-neutral-700 hover:text-lime-300">Facebook</a>
-        //                     </li>
-        //                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-        //                         <a href="#" className="font-light no-underline hover:underline text-neutral-700 hover:text-lime-300">Linkedin</a>
-        //                     </li>
-        //                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-        //                         <a href="#" className="font-light no-underline hover:underline text-neutral-700 hover:text-lime-300">Twitter</a>
-        //                     </li>
-        //                 </ul>
-        //             </div>
-
-        //             <div className="flex-1">
-        //                 <p className="uppercase font-extrabold text-neutral-800 md:mb-6">Company</p>
-        //                 <ul className="list-reset mb-6">
-        //                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-        //                         <a href="#" className="font-light no-underline hover:underline text-neutral-700 hover:text-lime-300">Artigos</a>
-        //                     </li>
-        //                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-        //                         <a href="#" className="font-light no-underline hover:underline text-neutral-700 hover:text-lime-300">Sobre</a>
-        //                     </li>
-        //                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-        //                         <a href="#" className="font-light no-underline hover:underline text-neutral-700 hover:text-lime-300">Contato</a>
-        //                     </li>
-        //                 </ul>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </footer >
     )
 }

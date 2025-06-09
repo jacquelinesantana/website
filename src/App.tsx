@@ -1,5 +1,5 @@
-import { WhatsAppButton } from "./components/whatsButton"
-import { Home } from "./pages/Home"
+import { WhatsAppButton } from '@/components/shared/whatsButton';
+import { Home } from '@/pages/Home';
 
 export default function App() {
     return (

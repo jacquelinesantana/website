@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import backgroundImage from "@/assets/img/img_hero.jpg"
-import { Element } from "react-scroll";
 
 export function Hero() {
     const [currentText, setCurrentText] = useState<string>('');
@@ -43,8 +42,9 @@ export function Hero() {
 
 
     return (
-        <Element name="inicio">
+        <>
             <section
+                id="inicio"
                 className="relative min-h-screen flex items-center overflow-hidden text-white"
             >
                 <div
@@ -66,9 +66,8 @@ export function Hero() {
                                 {currentText}
                             </h1>
                             <p className="text-lg text-gray-300 mx-auto">
-                                Uma dupla de desenvolvedores apaixonados por criar soluções
-                                digitais que impulsionam o seu negócio. Sites, sistemas e
-                                aplicações com design moderno e código limpo.
+                                Devs apaixonados por criar soluções digitais que impulsionam o seu negócio.
+                                Sites, sistemas e aplicações com design moderno e código limpo.
                             </p>
                             {/* <div className="flex flex-col sm:flex-row gap-4">
                                 <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer">
@@ -93,7 +92,7 @@ export function Hero() {
                             <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
                                 50+
                             </p>
-                            <p className="text-gray-300">Projetos Entregues</p>
+                            <p className="text-gray-300">Projetos Concluídos</p>
                         </div>
                         <div className="space-y-2">
                             <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
@@ -109,13 +108,13 @@ export function Hero() {
                         </div>
                         <div className="space-y-2">
                             <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                                24/7
+                                8/5
                             </p>
                             <p className="text-gray-300">Suporte Técnico</p>
                         </div>
                     </div>
                 </div>
             </section>
-        </Element>
+        </>
     )
 }

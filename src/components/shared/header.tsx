@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CodeIcon, MenuIcon } from "lucide-react";
-import { handleSendMessageWhatsApp } from "@/lib/handleSendMessageWhatsApp";
+import { sendWhatsAppMessage } from "@/lib/sendWhatsAppMessage";
 import { Link as ScrollLink } from "react-scroll";
 
 export function Header() {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const MESSAGE = "Olá, quero conhecer mais sobre os serviços de desenvolvimento de sites e sistemas."
+	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+	const MESSAGE = "Olá, quero conhecer mais sobre os serviços de desenvolvimento de sites e sistemas.";
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
@@ -25,9 +25,10 @@ export function Header() {
 					<ScrollLink to="inicio" className="cursor-pointer hover:text-purple-500 transition-colors" smooth={true} duration={500}>Início</ScrollLink>
 					<ScrollLink to="servicos" className="cursor-pointer hover:text-purple-500 transition-colors" smooth={true} duration={500}>Serviços</ScrollLink>
 					<ScrollLink to="portfolio" className="cursor-pointer hover:text-purple-500 transition-colors" smooth={true} duration={500}>Portfólio</ScrollLink>
+					<ScrollLink to="equipe" className="cursor-pointer hover:text-purple-500 transition-colors" smooth={true} duration={500}>Equipe</ScrollLink>
 					<ScrollLink to="contato" className="cursor-pointer hover:text-purple-500 transition-colors" smooth={true} duration={500}>Contato</ScrollLink>
 					<Button
-						onClick={() => handleSendMessageWhatsApp(MESSAGE)}
+						onClick={() => sendWhatsAppMessage(MESSAGE)}
 						className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white !rounded-button whitespace-nowrap cursor-pointer">
 						Fale Conosco
 					</Button>
@@ -52,9 +53,10 @@ export function Header() {
 						<a href="#inicio" className="py-2 hover:text-purple-500 transition-colors" onClick={toggleMenu}>Início</a>
 						<a href="#servicos" className="py-2 hover:text-purple-500 transition-colors" onClick={toggleMenu}>Serviços</a>
 						<a href="#portfolio" className="py-2 hover:text-purple-500 transition-colors" onClick={toggleMenu}>Portfólio</a>
-
+						<a href="#equipe" className="py-2 hover:text-purple-500 transition-colors" onClick={toggleMenu}>Equipe</a>
+						<a href="#contato" className="py-2 hover:text-purple-500 transition-colors" onClick={toggleMenu}>Contato</a>
 						<Button
-							onClick={() => handleSendMessageWhatsApp(MESSAGE)}
+							onClick={() => sendWhatsAppMessage(MESSAGE)}
 							className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white !rounded-button whitespace-nowrap cursor-pointer">
 							Fale Conosco
 						</Button>

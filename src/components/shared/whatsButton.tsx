@@ -1,4 +1,4 @@
-import { handleSendMessageWhatsApp } from "@/lib/handleSendMessageWhatsApp";
+import { sendWhatsAppMessage } from "@/lib/sendWhatsAppMessage";
 
 export function WhatsAppButton() {
     const MESSAGE = "Olá, quero conhecer mais sobre os serviços da Sintonia Tech."
@@ -17,7 +17,7 @@ export function WhatsAppButton() {
             <button
                 aria-label="Falar no WhatsApp"
                 aria-describedby="whatsapp-tooltip"
-                onClick={() => handleSendMessageWhatsApp(MESSAGE)}
+                onClick={() => sendWhatsAppMessage(MESSAGE)}
                 className="flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-colors duration-300"
             >
                 <img

@@ -1,10 +1,11 @@
-import { Hero } from '@/sections/hero';
-import { Tecs } from '@/sections/tecs';
-import { Footer } from '@/sections/footer';
-import { Header } from '@/sections/header';
-import { Contact } from '@/sections/contact';
-import { Services } from '@/sections/services';
-import { Portfolio } from '@/sections/portfolio';
+import { Hero } from '@/components/sections/hero';
+import { Tecs } from '@/components/sections/tecs';
+import { Footer } from '@/components/shared/footer';
+import { Header } from '@/components/shared/header';
+import { Equip } from '@/components/sections/equip';
+import { Contact } from '@/components/sections/contact';
+import { Services } from '@/components/sections/services';
+import { Portfolio } from '@/components/sections/portfolio';
 
 export function Home() {
     return (
@@ -13,7 +14,7 @@ export function Home() {
             <Hero />
             <Services />
             <Portfolio />
-            {/* <About /> */}
+            <Equip />
             <Tecs />
             {/* <Testimonials /> */}
             <Contact />

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { sendWhatsAppMessage } from "@/lib/sendWhatsAppMessage";
+
 import backgroundImage from "@/assets/img/img_contact.jpg"
-import { handleSendMessageWhatsApp } from "@/lib/handleSendMessageWhatsApp";
 
 export function Contact() {
     const MESSAGE = "Olá, quero conhecer mais sobre os serviços da Sintonia Tech."
@@ -30,7 +31,7 @@ export function Contact() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button
-                            onClick={() => handleSendMessageWhatsApp(MESSAGE)}
+                            onClick={() => sendWhatsAppMessage(MESSAGE)}
                             className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer">
                             Entre em Contato
                         </Button>
@@ -39,16 +40,5 @@ export function Contact() {
                 </div>
             </div>
         </section>
-        // <section className="flex flex-col place-items-center py-8 bg-neutral-900">
-        //     <h3 tabIndex={0} id='contact' className="my-4 text-3xl font-extrabold text-lime-500">
-        //         Chama no WhatsApp!
-        //     </h3>
-
-        //     <button tabIndex={0} id='contact'
-        //         className="bg-neutral-300 text-green-900 font-bold rounded my-6 py-4 px-8 cursor-pointer"
-        //         onClick={handleWhatsApp}>
-        //         Comece agora!
-        //     </button>
-        // </section>
     )
 }
