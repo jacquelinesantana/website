@@ -8,17 +8,30 @@ import { ChartLineIcon, CogIcon, LaptopIcon, ShoppingCartIcon, SmartphoneIcon, T
 export function Services() {
     const [activeTab, setActiveTab] = useState<string>("sites");
     return (
-        <section id="servicos" className="py-24 bg-black text-white">
+        <section
+            id="servicos"
+            className="py-24 bg-black text-white"
+            aria-label="Nossos Serviços"
+            role="region"
+            itemScope
+            itemType="http://schema.org/Service"
+        >
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <header className="text-center mb-16">
+                    <h2
+                        className="text-3xl md:text-4xl font-bold mb-4"
+                        itemProp="name"
+                    >
                         Nossos Serviços
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p
+                        className="text-gray-400 max-w-2xl mx-auto"
+                        itemProp="description"
+                    >
                         Oferecemos soluções completas para sua presença digital, desde
                         websites responsivos até sistemas complexos.
                     </p>
-                </div>
+                </header>
 
                 <Tabs
                     defaultValue="sites"
@@ -26,24 +39,44 @@ export function Services() {
                     onValueChange={setActiveTab}
                 >
                     <div className="flex justify-center mb-8">
-                        <TabsList className="bg-gray-900/50 p-1">
+                        <TabsList
+                            className="bg-gray-900/50 p-1"
+                            role="tablist"
+                            aria-label="Categorias de Serviços"
+                        >
                             <TabsTrigger
                                 value="sites"
                                 className={`px-6 py-3 !rounded-button whitespace-nowrap cursor-pointer ${activeTab === "sites" ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white" : "text-gray-400"}`}
+                                role="tab"
+                                aria-selected={activeTab === "sites"}
+                                aria-controls="sites-content"
                             >
                                 Websites
                             </TabsTrigger>
                             <TabsTrigger
                                 value="sistemas"
                                 className={`px-6 py-3 !rounded-button whitespace-nowrap cursor-pointer ${activeTab === "sistemas" ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white" : "text-gray-400"}`}
+                                role="tab"
+                                aria-selected={activeTab === "sistemas"}
+                                aria-controls="sistemas-content"
                             >
                                 Sistemas
                             </TabsTrigger>
                         </TabsList>
                     </div>
 
-                    <TabsContent value="sites" className="mt-0">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <TabsContent
+                        value="sites"
+                        className="mt-0"
+                        role="tabpanel"
+                        id="sites-content"
+                        aria-labelledby="sites-tab"
+                    >
+                        <div
+                            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                            role="list"
+                            aria-label="Lista de serviços de websites"
+                        >
                             {
                                 [
                                     {
@@ -110,20 +143,50 @@ export function Services() {
                                         message: "Olá, quero conhecer mais sobre os serviços de desenvolvimento de landing pages."
                                     }
                                 ].map((service) => (
-                                    <Card key={service.id} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
+                                    <Card
+                                        key={service.id}
+                                        className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300"
+                                        role="listitem"
+                                        itemScope
+                                        itemType="http://schema.org/Service"
+                                    >
                                         <CardHeader>
-                                            <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
+                                            <div
+                                                className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4"
+                                                aria-hidden="true"
+                                            >
                                                 {service.icon}
                                             </div>
-                                            <CardTitle className="text-2xl font-bold text-white">{service.title}</CardTitle>
-                                            <CardDescription className="text-gray-400">{service.description}</CardDescription>
+                                            <CardTitle
+                                                className="text-2xl font-bold text-white"
+                                                itemProp="name"
+                                            >
+                                                {service.title}
+                                            </CardTitle>
+                                            <CardDescription
+                                                className="text-gray-400"
+                                                itemProp="description"
+                                            >
+                                                {service.description}
+                                            </CardDescription>
                                         </CardHeader>
                                         <CardContent>
-                                            <ul className="space-y-2 text-gray-300">
+                                            <ul
+                                                className="space-y-2 text-gray-300"
+                                                itemProp="hasOfferCatalog"
+                                                itemScope
+                                                itemType="http://schema.org/OfferCatalog"
+                                            >
                                                 {service.features.map((feature) => (
-                                                    <li key={feature.id} className="flex items-center">
-                                                        <i className="fas fa-check text-green-500 mr-2"></i>
-                                                        {feature.description}
+                                                    <li
+                                                        key={feature.id}
+                                                        className="flex items-center"
+                                                        itemProp="itemListElement"
+                                                        itemScope
+                                                        itemType="http://schema.org/Offer"
+                                                    >
+                                                        <i className="fas fa-check text-green-500 mr-2" aria-hidden="true"></i>
+                                                        <span itemProp="description">{feature.description}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -131,7 +194,9 @@ export function Services() {
                                         <CardFooter>
                                             <Button
                                                 onClick={() => sendWhatsAppMessage(service.message)}
-                                                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 !rounded-button whitespace-nowrap cursor-pointer">
+                                                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 !rounded-button whitespace-nowrap cursor-pointer"
+                                                aria-label={`Saiba mais sobre ${service.title}`}
+                                            >
                                                 Saiba Mais
                                             </Button>
                                         </CardFooter>
@@ -140,8 +205,18 @@ export function Services() {
                         </div>
                     </TabsContent>
 
-                    <TabsContent value="sistemas" className="mt-0">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <TabsContent
+                        value="sistemas"
+                        className="mt-0"
+                        role="tabpanel"
+                        id="sistemas-content"
+                        aria-labelledby="sistemas-tab"
+                    >
+                        <div
+                            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                            role="list"
+                            aria-label="Lista de serviços de sistemas"
+                        >
                             {
                                 [
                                     {
@@ -208,20 +283,50 @@ export function Services() {
                                         message: "Olá, quero conhecer mais sobre os serviços de desenvolvimento de sistemas personalizados."
                                     }
                                 ].map((service) => (
-                                    <Card key={service.id} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
+                                    <Card
+                                        key={service.id}
+                                        className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300"
+                                        role="listitem"
+                                        itemScope
+                                        itemType="http://schema.org/Service"
+                                    >
                                         <CardHeader>
-                                            <div className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
+                                            <div
+                                                className="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4"
+                                                aria-hidden="true"
+                                            >
                                                 {service.icon}
                                             </div>
-                                            <CardTitle className="text-2xl font-bold text-white">{service.title}</CardTitle>
-                                            <CardDescription className="text-gray-400">{service.description}</CardDescription>
+                                            <CardTitle
+                                                className="text-2xl font-bold text-white"
+                                                itemProp="name"
+                                            >
+                                                {service.title}
+                                            </CardTitle>
+                                            <CardDescription
+                                                className="text-gray-400"
+                                                itemProp="description"
+                                            >
+                                                {service.description}
+                                            </CardDescription>
                                         </CardHeader>
                                         <CardContent>
-                                            <ul className="space-y-2 text-gray-300">
+                                            <ul
+                                                className="space-y-2 text-gray-300"
+                                                itemProp="hasOfferCatalog"
+                                                itemScope
+                                                itemType="http://schema.org/OfferCatalog"
+                                            >
                                                 {service.features.map((feature) => (
-                                                    <li key={feature.id} className="flex items-center">
-                                                        <i className="fas fa-check text-green-500 mr-2"></i>
-                                                        {feature.description}
+                                                    <li
+                                                        key={feature.id}
+                                                        className="flex items-center"
+                                                        itemProp="itemListElement"
+                                                        itemScope
+                                                        itemType="http://schema.org/Offer"
+                                                    >
+                                                        <i className="fas fa-check text-green-500 mr-2" aria-hidden="true"></i>
+                                                        <span itemProp="description">{feature.description}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -229,7 +334,9 @@ export function Services() {
                                         <CardFooter>
                                             <Button
                                                 onClick={() => sendWhatsAppMessage(service.message)}
-                                                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 !rounded-button whitespace-nowrap cursor-pointer">
+                                                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 !rounded-button whitespace-nowrap cursor-pointer"
+                                                aria-label={`Saiba mais sobre ${service.title}`}
+                                            >
                                                 Saiba Mais
                                             </Button>
                                         </CardFooter>
@@ -239,6 +346,6 @@ export function Services() {
                     </TabsContent>
                 </Tabs>
             </div>
-        </section >
+        </section>
     )
 }

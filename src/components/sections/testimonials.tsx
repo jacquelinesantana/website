@@ -9,17 +9,29 @@ import 'swiper/css/pagination';
 
 export function Testimonials() {
     return (
-        <section className="py-24 bg-black text-white">
+        <section
+            className="py-24 bg-black text-white"
+            aria-label="Depoimentos de Clientes"
+            role="region"
+            itemScope
+            itemType="http://schema.org/Review"
+        >
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <header className="text-center mb-16">
+                    <h2
+                        className="text-3xl md:text-4xl font-bold mb-4"
+                        itemProp="name"
+                    >
                         O que Nossos Clientes Dizem
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p
+                        className="text-gray-400 max-w-2xl mx-auto"
+                        itemProp="description"
+                    >
                         A satisfação dos nossos clientes é a nossa maior recompensa.
                         Confira o que eles têm a dizer sobre nossos serviços.
                     </p>
-                </div>
+                </header>
 
                 <Swiper
                     modules={[Pagination, Autoplay]}
@@ -39,6 +51,8 @@ export function Testimonials() {
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 5000 }}
                     className="testimonial-swiper"
+                    role="region"
+                    aria-label="Carrossel de depoimentos"
                 >
                     {[
                         {
@@ -74,40 +88,73 @@ export function Testimonials() {
                                 "https://readdy.ai/api/search-image?query=professional%20business%20woman%20portrait%20with%20neutral%20background%2C%20corporate%20headshot%2C%20high%20quality%20professional%20photo&width=100&height=100&seq=test4&orientation=squarish",
                         },
                     ].map((testimonial, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 h-full flex flex-col">
+                        <SwiperSlide
+                            key={index}
+                            role="group"
+                            aria-label={`Depoimento de ${testimonial.name}`}
+                        >
+                            <article
+                                className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 h-full flex flex-col"
+                                itemScope
+                                itemType="http://schema.org/Review"
+                            >
                                 <div className="flex-grow">
-                                    <div className="flex mb-4">
+                                    <div
+                                        className="flex mb-4"
+                                        itemProp="reviewRating"
+                                        itemScope
+                                        itemType="http://schema.org/Rating"
+                                    >
                                         {[1, 2, 3, 4, 5].map((star) => (
                                             <i
                                                 key={star}
                                                 className="fas fa-star text-yellow-500 mr-1"
+                                                aria-hidden="true"
                                             ></i>
                                         ))}
+                                        <meta itemProp="ratingValue" content="5" />
+                                        <meta itemProp="bestRating" content="5" />
                                     </div>
-                                    <p className="text-gray-300 italic mb-6">
+                                    <p
+                                        className="text-gray-300 italic mb-6"
+                                        itemProp="reviewBody"
+                                    >
                                         "{testimonial.quote}"
                                     </p>
                                 </div>
-                                <div className="flex items-center">
+                                <footer
+                                    className="flex items-center"
+                                    itemProp="author"
+                                    itemScope
+                                    itemType="http://schema.org/Person"
+                                >
                                     <img
                                         src={testimonial.avatar}
-                                        alt={testimonial.name}
+                                        alt={`Foto de ${testimonial.name}`}
                                         className="w-12 h-12 rounded-full mr-4 object-cover"
+                                        itemProp="image"
+                                        loading="lazy"
                                     />
                                     <div>
-                                        <p className="font-medium">{testimonial.name}</p>
-                                        <p className="text-sm text-gray-400">
+                                        <p
+                                            className="font-medium"
+                                            itemProp="name"
+                                        >
+                                            {testimonial.name}
+                                        </p>
+                                        <p
+                                            className="text-sm text-gray-400"
+                                            itemProp="jobTitle"
+                                        >
                                             {testimonial.role}
                                         </p>
                                     </div>
-                                </div>
-                            </div>
+                                </footer>
+                            </article>
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
-        </section >
-
+        </section>
     )
 }

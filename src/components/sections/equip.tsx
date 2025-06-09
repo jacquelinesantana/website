@@ -18,17 +18,30 @@ const devJacque = {
 
 export function Equip() {
     return (
-        <section id="equipe" className="py-24 bg-black text-white">
+        <section
+            id="equipe"
+            className="py-24 bg-black text-white"
+            aria-label="Seção da Equipe"
+            role="region"
+            itemScope
+            itemType="http://schema.org/Organization"
+        >
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <header className="text-center mb-16">
+                    <h2
+                        className="text-3xl md:text-4xl font-bold mb-4"
+                        itemProp="name"
+                    >
                         Conheça Nossa Equipe
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p
+                        className="text-gray-400 max-w-2xl mx-auto"
+                        itemProp="description"
+                    >
                         Devs apaixonados por tecnologia e
                         inovação, prontos para transformar suas ideias em realidade.
                     </p>
-                </div>
+                </header>
 
                 <Swiper
                     modules={[Navigation, Autoplay]}
@@ -40,47 +53,90 @@ export function Equip() {
                         disableOnInteraction: false,
                     }}
                     className="dev-swiper"
+                    aria-label="Carrossel de membros da equipe"
                 >
                     <SwiperSlide>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <article
+                            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+                            itemScope
+                            itemType="http://schema.org/Person"
+                            itemProp="employee"
+                        >
                             <div className="relative">
                                 <div className="relative bg-gray-900 rounded-lg overflow-hidden w-[300px] h-[300px] mx-auto">
                                     <img
                                         src={devYuri.url}
                                         alt={`Desenvolvedor ${devYuri.nome}`}
                                         className="w-full h-full object-cover"
+                                        itemProp="image"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
                             <div className="space-y-6">
-                                <h3 className="text-2xl font-bold">{devYuri.nome}</h3>
-                                <p className="text-purple-400">Desenvolvedor Front-End</p>
-                                <p className="text-gray-300">
+                                <h3
+                                    className="text-2xl font-bold"
+                                    itemProp="name"
+                                >
+                                    {devYuri.nome}
+                                </h3>
+                                <p
+                                    className="text-purple-400"
+                                    itemProp="jobTitle"
+                                >
+                                    Desenvolvedor Front-End
+                                </p>
+                                <p
+                                    className="text-gray-300"
+                                    itemProp="description"
+                                >
                                     {devYuri.texto}
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <article
+                            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+                            itemScope
+                            itemType="http://schema.org/Person"
+                            itemProp="employee"
+                        >
                             <div className="relative">
                                 <div className="relative bg-gray-900 rounded-lg overflow-hidden w-[300px] h-[300px] mx-auto">
                                     <img
                                         src={devJacque.url}
                                         alt={`Desenvolvedora ${devJacque.nome}`}
                                         className="w-full h-full object-cover"
+                                        itemProp="image"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
                             <div className="space-y-6">
-                                <h3 className="text-2xl font-bold">{devJacque.nome}</h3>
-                                <p className="text-purple-400">Desenvolvedora Back-End</p>
-                                <p className="text-gray-300">{devJacque.texto}</p>
+                                <h3
+                                    className="text-2xl font-bold"
+                                    itemProp="name"
+                                >
+                                    {devJacque.nome}
+                                </h3>
+                                <p
+                                    className="text-purple-400"
+                                    itemProp="jobTitle"
+                                >
+                                    Desenvolvedora Back-End
+                                </p>
+                                <p
+                                    className="text-gray-300"
+                                    itemProp="description"
+                                >
+                                    {devJacque.texto}
+                                </p>
                             </div>
-                        </div>
+                        </article>
                     </SwiperSlide>
                 </Swiper>
             </div>
-        </section >
+        </section>
     )
 }
