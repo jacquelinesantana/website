@@ -65,11 +65,6 @@ export function Footer() {
                                     Aplicativos
                                 </a>
                             </li>
-                            <li>
-                                <a className="text-gray-400 hover:text-purple-400 transition-colors">
-                                    Tutoriais
-                                </a>
-                            </li>
                         </ul>
                     </div>
 
@@ -82,7 +77,7 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="portfolio" className="text-gray-400 hover:text-purple-400 transition-colors">
+                                <a href="#portfolio" className="text-gray-400 hover:text-purple-400 transition-colors">
                                     Portfólio
                                 </a>
                             </li>
@@ -105,11 +100,11 @@ export function Footer() {
                             </li> */}
                             <li className="flex items-center">
                                 <PhoneIcon className="text-purple-500 mr-3" />
-                                <span className="text-gray-400">(11) 99999-9999</span>
+                                <span className="text-gray-400">(11) 98980-9727</span>
                             </li>
                             <li className="flex items-center">
                                 <MailIcon className="text-purple-500 mr-3" />
-                                <span className="text-gray-400">contato@devduo.com.br</span>
+                                <span className="text-gray-400">admin@sintoniatech.online</span>
                             </li>
                             <li className="flex items-center">
                                 <ClockIcon className="text-purple-500 mr-3" />
@@ -123,7 +118,7 @@ export function Footer() {
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
                         © 2025 SintoniaTech. Todos os direitos reservados.
                     </p>
-                    <div className="flex space-x-4">
+                    {/* <div className="flex space-x-4">
                         <a
                             href="#"
                             className="text-gray-500 text-sm hover:text-purple-400 transition-colors"
@@ -142,7 +137,7 @@ export function Footer() {
                         >
                             Cookies
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

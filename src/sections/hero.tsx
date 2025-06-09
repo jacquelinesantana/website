@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import backgroundImage from "@/assets/img/img_hero.jpg"
+import { Element } from "react-scroll";
 
 export function Hero() {
     const [currentText, setCurrentText] = useState<string>('');
@@ -42,9 +43,8 @@ export function Hero() {
 
 
     return (
-        <>
+        <Element name="inicio">
             <section
-                id="inicio"
                 className="relative min-h-screen flex items-center overflow-hidden text-white"
             >
                 <div
@@ -62,16 +62,6 @@ export function Hero() {
                 <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
                     <div className="grid grid-cols-1 gap-8 items-center text-center">
                         <div className="space-y-6 mx-auto max-w-3xl">
-                            {/* <div className="inline-block px-4 py-2 bg-purple-900/50 backdrop-blur-sm rounded-full text-sm">
-                                Transformando ideias em código
-                            </div> */}
-                            {/* <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                                Desenvolvimento{" "}
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                                    Descomplicado
-                                </span>
-                            </h1> */}
-
                             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                                 {currentText}
                             </h1>
@@ -126,6 +116,6 @@ export function Hero() {
                     </div>
                 </div>
             </section>
-        </>
+        </Element>
     )
 }

@@ -1,13 +1,11 @@
-import { Header } from "./sections/header"
-import { Home } from "./pages/Home/Home"
-import { Footer } from "./sections/footer"
+import { WhatsAppButton } from "./components/whatsButton"
+import { Home } from "./pages/Home"
 
 export default function App() {
-  return (
-    <>
-      <Header />
-      <Home />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Home />
+            <WhatsAppButton />
+        </>
+    )
 }

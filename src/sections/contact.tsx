@@ -1,14 +1,9 @@
 import { Button } from "@/components/ui/button";
 import backgroundImage from "@/assets/img/img_contact.jpg"
+import { handleSendMessageWhatsApp } from "@/lib/handleSendMessageWhatsApp";
 
 export function Contact() {
-
-    // function handleWhatsApp(): void {
-    //     const PHONE_NUMBER = "11989809727"
-    //     const MESSAGE = "Quero conhecer mais sobre seus trabalhos de site e sistemas";
-    //     const URL = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(MESSAGE)}`;
-    //     window.open(URL, "_blank");
-    // }
+    const MESSAGE = "Olá, quero conhecer mais sobre os serviços da Sintonia Tech."
 
     return (
         <section id="contato" className="py-24 relative text-white">
@@ -34,8 +29,10 @@ export function Contact() {
                         o seu negócio.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer">
-                            Chama no WhatsApp!
+                        <Button
+                            onClick={() => handleSendMessageWhatsApp(MESSAGE)}
+                            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer">
+                            Entre em Contato
                         </Button>
 
                     </div>

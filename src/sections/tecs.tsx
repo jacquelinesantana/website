@@ -1,16 +1,8 @@
 import {
     Code2,
     Server,
-    FileJson,
-    FileCode,
-    Paintbrush,
-    Binary,
-    Blocks,
-    Braces,
-    Cloud,
-    Container,
-    GitBranch,
-    Workflow
+    FileJson, Binary,
+    Blocks, Workflow
 } from 'lucide-react';
 
 export function Tecs() {
