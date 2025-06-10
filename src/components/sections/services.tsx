@@ -46,7 +46,7 @@ export function Services() {
                         >
                             <TabsTrigger
                                 value="sites"
-                                className={`px-6 py-3 !rounded-button whitespace-nowrap cursor-pointer ${activeTab === "sites" ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white" : "text-gray-400"}`}
+                                className="px-6 py-3 !rounded-button whitespace-nowrap cursor-pointer text-gray-400 data-[state=active]:bg-purple-600 data-[state=active]:text-white"
                                 role="tab"
                                 aria-selected={activeTab === "sites"}
                                 aria-controls="sites-content"
@@ -55,7 +55,7 @@ export function Services() {
                             </TabsTrigger>
                             <TabsTrigger
                                 value="sistemas"
-                                className={`px-6 py-3 !rounded-button whitespace-nowrap cursor-pointer ${activeTab === "sistemas" ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white" : "text-gray-400"}`}
+                                className="px-6 py-3 !rounded-button whitespace-nowrap cursor-pointer text-gray-400 data-[state=active]:bg-purple-600 data-[state=active]:text-white"
                                 role="tab"
                                 aria-selected={activeTab === "sistemas"}
                                 aria-controls="sistemas-content"

@@ -118,6 +118,7 @@ export function Footer() {
                 <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
                         © 2025 SintoniaTech. Todos os direitos reservados.
+                        {/* Desenvolvido por <a href="https://github.com/Yuri-stack" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-500 transition-colors">Yuri</a> e <a href="https://github.com/jacquelinesantana" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-500 transition-colors">Jacque</a>. */}
                     </p>
                     {/* <div className="flex space-x-4">
                         <a

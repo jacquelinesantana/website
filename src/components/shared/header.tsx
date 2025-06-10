@@ -4,9 +4,10 @@ import { CodeIcon, MenuIcon } from "lucide-react";
 import { sendWhatsAppMessage } from "@/lib/sendWhatsAppMessage";
 import { Link as ScrollLink } from "react-scroll";
 
+const MESSAGE: string = "Olá, quero conhecer mais sobre os serviços da Sintonia Tech.";
+
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-	const MESSAGE = "Olá, quero conhecer mais sobre os serviços de desenvolvimento de sites e sistemas.";
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);

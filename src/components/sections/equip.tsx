@@ -4,15 +4,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
 
+import imgYuri from "@/assets/img/dev_yuri.png";
+import imgJacque from "@/assets/img/dev_jacque.jpeg";
+
 const devYuri = {
     nome: "Yuri Oliveira",
-    url: "https://github.com/Yuri-stack.png",
+    url: imgYuri,
     texto: "Sou Desenvolvedor Front End com formação em Análise e Desenvolvimento de Sistemas e mais de 4 anos de experiência no desenvolvimento e ensino na área de tecnologia. Ser altamente detalhista e organizado são meus diferenciais para entregas de alta qualidade e valor."
 };
 
 const devJacque = {
     nome: "Jacqueline Hernandes",
-    url: "https://github.com/jacquelinesantana.png",
+    url: imgJacque,
     texto: "Desenvolvedora Back-end e Analista de Sistemas, mais de 10 anos de experiência em desenvolvimento web. Minha formação e experiência me permitem avaliar o que é necessário para desenvolver seu site de forma profissional e eficiente, atingindo então as expectativas e objetivos."
 };
 
@@ -48,10 +51,10 @@ export function Equip() {
                     spaceBetween={30}
                     slidesPerView={1}
                     navigation
-                    autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    }}
+                    // autoplay={{
+                    //     delay: 5000,
+                    //     disableOnInteraction: false,
+                    // }}
                     className="dev-swiper"
                     aria-label="Carrossel de membros da equipe"
                 >
@@ -60,7 +63,7 @@ export function Equip() {
                             className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                             itemScope
                             itemType="http://schema.org/Person"
-                            itemProp="employee"
+                            itemProp="equip"
                         >
                             <div className="relative">
                                 <div className="relative bg-gray-900 rounded-lg overflow-hidden w-[300px] h-[300px] mx-auto">
@@ -73,7 +76,7 @@ export function Equip() {
                                     />
                                 </div>
                             </div>
-                            <div className="space-y-6">
+                            <div className="space-y-6 mr-10">
                                 <h3
                                     className="text-2xl font-bold"
                                     itemProp="name"
@@ -100,7 +103,7 @@ export function Equip() {
                             className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
                             itemScope
                             itemType="http://schema.org/Person"
-                            itemProp="employee"
+                            itemProp="equip"
                         >
                             <div className="relative">
                                 <div className="relative bg-gray-900 rounded-lg overflow-hidden w-[300px] h-[300px] mx-auto">
@@ -113,7 +116,7 @@ export function Equip() {
                                     />
                                 </div>
                             </div>
-                            <div className="space-y-6">
+                            <div className="space-y-6 mr-10">
                                 <h3
                                     className="text-2xl font-bold"
                                     itemProp="name"
