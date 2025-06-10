@@ -51,10 +51,10 @@ export function Equip() {
                     spaceBetween={30}
                     slidesPerView={1}
                     navigation
-                    // autoplay={{
-                    //     delay: 5000,
-                    //     disableOnInteraction: false,
-                    // }}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }}
                     className="dev-swiper"
                     aria-label="Carrossel de membros da equipe"
                 >
