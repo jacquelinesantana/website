@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /privado/
+
+Allow: /
+
+Sitemap: https://sintoniatech.online/sitemap.xml
