@@ -1,7 +1,7 @@
 Política de Privacidade — SintoniaTech
 ======================================
 
-Data da última atualização: 11 de junho de 2025
+Data da última atualização: 11  de junho de 2025
 
 A sua privacidade é importante para nós. Esta Política de Privacidade descreve como o site **SintoniaTech** coleta, usa e protege as informações dos visitantes.
 
