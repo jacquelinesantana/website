@@ -67,7 +67,7 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-purple-400 transition-colors" target="_blank" href="./assets/Politica_de_privacidade-SintoniaTech.md">
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors" target="_blank" href="https://github.com/jacquelinesantana/website/blob/main/src/assets/Politica_de_privacidade-SintoniaTech.md">
                                     Politica de Privacidade
                                 </a>
                             </li>
