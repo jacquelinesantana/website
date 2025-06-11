@@ -15,7 +15,7 @@ export function Header() {
 
 	return (
 		<header id="header"
-			className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-white bg-black/50 backdrop-blur-sm">
+			className="fixed top-0 left-0 right-0 z-20 transition-all duration-300 text-white bg-black/50 backdrop-blur-sm">
 			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 				<div className="flex items-center">
 					<CodeIcon className="text-2xl text-purple-500 mr-2" />
