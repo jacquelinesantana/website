@@ -1,5 +1,7 @@
 import { sendWhatsAppMessage } from "@/lib/sendWhatsAppMessage";
 
+import logo from '@/assets/img/icon_whats.svg';
+
 export function WhatsAppButton() {
     const MESSAGE = "Olá, quero conhecer mais sobre os serviços da Sintonia Tech."
 
@@ -23,7 +25,7 @@ export function WhatsAppButton() {
                 <img
                     className="w-10 h-10"
                     alt="Logo do WhatsApp"
-                    src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" />
+                    src={logo} />
             </button>
         </div>
     )

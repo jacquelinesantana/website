@@ -1,13 +1,13 @@
 import { Home } from '@/pages/Home';
 import { WhatsAppButton } from '@/components/shared/whatsButton';
-import { CookieConsentBanner } from './components/shared/CookieConsentBanner';
+import { ConsentBanner } from './components/shared/consentBanner';
 
 export default function App() {
     return (
         <>
             <Home />
             <WhatsAppButton />
-            <CookieConsentBanner />
+            <ConsentBanner />
         </>
     )
 }

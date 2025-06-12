@@ -38,7 +38,7 @@ const CONSENT_DURATION_MONTHS = 12;
 //     },
 // ]
 
-export function CookieConsentBanner() {
+export function ConsentBanner() {
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const [showPreferences, setShowPreferences] = useState<boolean>(false);
     const [preferences, setPreferences] = useState<CookiePreferences>({
@@ -304,13 +304,13 @@ export function CookieConsentBanner() {
                         <div className="px-6 md:px-8 py-4 bg-gray-800/50 border-t border-gray-700">
                             <div className="flex flex-wrap items-center justify-between gap-4 text-sm">
                                 <div className="flex flex-wrap gap-4">
-                                    <a href="" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
+                                    <a href="privacy-policy.html" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
                                         Política de Privacidade
                                     </a>
-                                    <a href="" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
+                                    <a href="cookies-policy.html" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
                                         Política de Cookies
                                     </a>
-                                    <a href="" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
+                                    <a href="terms.html" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
                                         Termos de Uso
                                     </a>
                                 </div>

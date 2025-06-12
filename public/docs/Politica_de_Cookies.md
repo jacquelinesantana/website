@@ -1,6 +1,6 @@
 # Política de Cookies — SintoniaTech
 
-A presente Política de Cookies é um documento complementar à Política de Privacidade da SintoniaTech, disponível neste link: (link da política de privacidade). Aqui, você encontrará informações objetivas e claras sobre o que são Cookies, quais Cookies utilizamos em nossas aplicações, qual papel desempenham e como configurá-los.
+A presente Política de Cookies é um documento complementar à Política de Privacidade da SintoniaTech, disponível neste link: https://sintoniatech.online/privacy-policy.html. Aqui, você encontrará informações objetivas e claras sobre o que são Cookies, quais Cookies utilizamos em nossas aplicações, qual papel desempenham e como configurá-los.
 
 ## 1. O que são Cookies?
 
@@ -42,16 +42,13 @@ Os Cookies participam deste processo porquanto armazenam, leem e executam os dad
 
 Abaixo listamos todos os Cookies que podem ser utilizados pela  _Sintonia Tech._ É importante lembrar que você pode gerenciar a permissão concedida para cada Cookie em seu navegador.
 
-Além disso, uma vez que os Cookies capturam dados sobre você, aconselhamos a leitura de nossa Política de Privacidade, disponível neste link (_link da política de privacidade_).
+Além disso, uma vez que os Cookies capturam dados sobre você, aconselhamos a leitura de nossa Política de Privacidade, disponível neste link (_[link da política de privacidade](https://sintoniatech.online/privacy-policy.html)_).
 
 ### 3.1. Cookies necessários
 | Cookie | Tempo | Prioridade | Descrição
 |--|--|--|--|
-|  _cookieConsent_| 1 ano | Alta | _Esse cookie é utilizado para gravar o aceite da politica de cookies e privacidade do site._ |
-||2 anos|Alta|_Esse cookie é utilizado para registrar um número individual de ID cujo propósito é gerar dados estatísticos de visitas ao site._
-||1 dia|Alta|_Esse cookie é usado pelo Google Analytics a fins de gerenciar a taxa de requisições à página._
-||1 dia|Alta|_Esse cookie é utilizado para registrar um número individual de ID cujo propósito é gerar dados estatísticos sobre como o Usuário utiliza o website._
-
+|__ga_|2 anos | Médio |_Esse cookie é utilizado para registrar um número individual de ID cujo propósito é gerar dados estatísticos de visitas ao site._
+|__ga< container-id>_|2 anos| Médio |_Esse cookie é utilizado para para manter o estado da sessão._
 
 ## 4. Gerenciamento dos Cookies
 
