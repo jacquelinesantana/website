@@ -66,7 +66,7 @@ export function Footer() {
                                     Aplicativos
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
 
@@ -89,7 +89,7 @@ export function Footer() {
                                     duration={500}>Contato</ScrollLink>
                             </li>
                             <li>
-                                <a className="text-gray-400 hover:text-purple-400 transition-colors" target="_blank" href="https://github.com/jacquelinesantana/website/blob/main/src/assets/Politica_de_privacidade-SintoniaTech.md">
+                                <a className="text-gray-400 hover:text-purple-400 transition-colors" target="_blank" href="privacy-policy.html">
                                     Politica de Privacidade
                                 </a>
                             </li>
